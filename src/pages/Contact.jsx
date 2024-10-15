@@ -32,7 +32,7 @@ const Contact = () => {
     e.preventDefault();
     
     const { name, email, phone, subject, message } = formData;
-    const mailtoLink = `mailto:muhammedrifadkp3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage: ${message}`)}`;
+    const mailtoLink = `mailto:eesan.naturalsolutions@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage: ${message}`)}`;
 
     // Open the mail client
     window.location.href = mailtoLink;
