@@ -167,7 +167,7 @@ const ContactPage = () => {
               <div className="cp-info-content">
                 <h4 className="oswald-600">Location</h4>
                 <p className="poppins-regular"><a href="https://maps.app.goo.gl/mPainz4r7RKsWSRy9">
-                  India Institute of Technology Madras
+                  Indian Institute of Technology Madras
                   <br /> IIT P.O., Chennai 600 036
                   <br /> INDIA</a>
                 </p>
