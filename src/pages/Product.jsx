@@ -62,25 +62,25 @@ const Product = () => {
                             <thead>
                                 <tr className='oswald-600'>
                                     <th>Model</th>
-                                    <th>Capacity</th>
-                                    <th>Material</th>
+                                    <th>Capacity (m3/day)</th>
+                                    <th>Biomethane purity (%)</th>
                                 </tr>
                             </thead>
                             <tbody className='poppins-regular'>
                                 <tr>
-                                    <td>BPR-1-90</td>
-                                    <td>1 - 20 m³/day</td>
-                                    <td>Stainless Steel</td>
+                                    <td>BPR-1</td>
+                                    <td>1- 10</td>
+                                    <td>90 %</td>
                                 </tr>
                                 <tr>
-                                    <td>BPR-2-95</td>
-                                    <td>10 - 100 m³/day</td>
-                                    <td>Carbon Steel</td>
+                                    <td>BPR-2</td>
+                                    <td>20-100</td>
+                                    <td>95 %</td>
                                 </tr>
                                 <tr>
-                                    <td>BPR-3-95+</td>
-                                    <td>100+ m³/day</td>
-                                    <td>Galvanized Steel</td>
+                                    <td>BPR-3</td>
+                                    <td>Above 100</td>
+                                    <td>95+ %</td>
                                 </tr>
                             </tbody>
                         </Table>
