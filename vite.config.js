@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['./path/to/bootstrap/dist/css/bootstrap.min.css']
+      external: ['./path/to/bootstrap/dist/css/bootstrap.min.css'],
+      external: ['bootstrap']
     }
   }
 });
+
