@@ -19,12 +19,11 @@ const Homepage = () => {
         <div className="hero-section text-center text-white position-relative">
           <img src={bg_1} alt="Hero" className="hero-img" />
           <div className="hero-content">
-            <h3 className="oswald-600 ">Utilize Organic Waste</h3>
-            <h1 className="display-4 fw-bold mb-4 oswald-600">Cleaner Energy, <span className='green'>Greener World</span></h1>
+            <h3 className="oswald-600 ">Engineers 4 Environment</h3>
+            <h1 className="display-4 fw-bold mb-4 oswald-600">Solutions that work<span className='green'> for the people and the planet</span></h1>
             <p className="lead mb-4 poppins-regular">
-    Embrace Organic Waste with <span className="font-bold">EESSAN</span>. Let’s take action to create a sustainable future.<br />
-    Together, we can convert waste into renewable energy,<br />
-    ensuring a cleaner and healthier planet for generations to come.
+            A journey with <span className="font-bold">EESSAN</span> for an economic prosperity in harmony with nature’s balance.<br />
+    
 </p>
 
             <a href="tel:+919042032363"><button className='btng poppins-regular'>Start Today</button></a>
@@ -40,8 +39,8 @@ const Homepage = () => {
                     <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faAddressBook} /></div>
                   </div>
                   <div className="card-body">
-                    <h5 className="card-title">Become a Volunteer</h5>
-                    <p className="card-text">Join our community and make a difference.</p>
+                    <h5 className="card-title"> Energy</h5>
+                    <p className="card-text">Affordable and clean energy</p>
                   </div>
                 </div>
               </div>
@@ -52,8 +51,8 @@ const Homepage = () => {
                     <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faEarthAmericas} /></div>
                   </div>
                   <div className="card-body">
-                    <h5 className="card-title">Global Movement</h5>
-                    <p className="card-text">Be part of a worldwide environmental initiative.</p>
+                    <h5 className="card-title">Water</h5>
+                    <p className="card-text">Clean water and sanitation</p>
                   </div>
                 </div>
               </div>
@@ -64,8 +63,8 @@ const Homepage = () => {
                     <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faUsers} /></div>
                   </div>
                   <div className="card-body">
-                    <h5 className="card-title">Donation</h5>
-                    <p className="card-text">Support our cause with your contribution.</p>
+                    <h5 className="card-title">Community</h5>
+                    <p className="card-text">Sustainable cities and communities</p>
                   </div>
                 </div>
               </div>

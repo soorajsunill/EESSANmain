@@ -30,7 +30,7 @@ const teamMembers = [
     description: "Shreyas plays a pivotal role in designing innovative technologies that empower businesses to implement renewable energy practices effectively.",
   },
   {
-    name: 'Manjusha BK',
+    name: 'Manjusha B K',
     position: "MTech'25, IIT Madras (Marketing and Outreach Lead)",
     qualifications: "MTech'25, IIT Madras, Environmental Engineering",
     image: manjusha,
@@ -55,10 +55,10 @@ const teamMembers = [
 const OurTeam1 = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+      duration: 800, // Animation duration in milliseconds
+      delay: 200, // Delay before the animation starts
+  });
+}, []);
 
   return (
     <section className="team-section py-16 bg-grey">

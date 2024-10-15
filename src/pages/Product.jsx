@@ -10,15 +10,15 @@ const Product = () => {
     useEffect(() => {
         // Initialize AOS with custom settings
         AOS.init({
-            duration: 1200, // Animation duration in milliseconds
-            delay: 200, // Default delay before the animation starts
+            duration: 800, // Animation duration in milliseconds
+            delay: 200, // Delay before the animation starts
         });
-    }, []); // Empty dependency array to run this effect only once when the component mounts
+    }, []);; // Empty dependency array to run this effect only once when the component mounts
 
     return (
         <>
             <Container className="product-page mt-5">
-                <h1 className="text-center mb-4 product-heading oswald-600" data-aos="fade-up">Biogas Purification for MSMEs</h1>
+                <h1 className="text-center mb-4 product-heading oswald-600" data-aos="fade-up">Biomethane purity</h1>
                 <Row>
                     <Col md={4} data-aos="fade-right">
                         <Card className="product-image-card">
@@ -55,7 +55,7 @@ const Product = () => {
                 </Row>
 
                 {/* Product Specifications */}
-                <Row className="mt-4" data-aos="fade-up" data-aos-delay="800">
+                <Row className="mt-4" data-aos="fade-up" data-aos-delay="300">
                     <Col>
                         <h3 className="product-variations-heading oswald-600">Product Specifications</h3>
                         <Table striped bordered hover responsive className="product-table">
@@ -64,27 +64,23 @@ const Product = () => {
                                     <th>Model</th>
                                     <th>Capacity</th>
                                     <th>Material</th>
-                                    <th>Maintenance</th>
                                 </tr>
                             </thead>
                             <tbody className='poppins-regular'>
                                 <tr>
-                                    <td>BPR-1</td>
+                                    <td>BPR-1-90</td>
                                     <td>1 - 20 m³/day</td>
                                     <td>Stainless Steel</td>
-                                    <td>Low Maintenance</td>
                                 </tr>
                                 <tr>
-                                    <td>BPR-2</td>
+                                    <td>BPR-2-95</td>
                                     <td>10 - 100 m³/day</td>
                                     <td>Carbon Steel</td>
-                                    <td>Quarterly Service</td>
                                 </tr>
                                 <tr>
-                                    <td>BPR-3</td>
+                                    <td>BPR-3-95+</td>
                                     <td>100+ m³/day</td>
                                     <td>Galvanized Steel</td>
-                                    <td>Annual Service</td>
                                 </tr>
                             </tbody>
                         </Table>
@@ -92,7 +88,7 @@ const Product = () => {
                 </Row>
 
                 {/* Product Additional Details */}
-                <Row className="mt-5" data-aos="fade-up" data-aos-delay="900">
+                <Row className="mt-5" data-aos="fade-up" data-aos-delay="300">
                     <Col>
                         <h3 className="additional-details-heading oswald-600">Key Advantages</h3>
                         <ul className="additional-details-list poppins-regular">

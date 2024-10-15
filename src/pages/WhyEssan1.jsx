@@ -7,9 +7,11 @@ import './WhyEssan1.css'
 
 const WhyEssan1 = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            delay: 200, // Delay before the animation starts
+        });
     }, []);
-
     const reasons = [
         {
             icon: faSackDollar,

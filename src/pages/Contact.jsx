@@ -19,10 +19,10 @@ const Contact = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      delay: 200,
-    });
-  }, []);
+      duration: 800, // Animation duration in milliseconds
+      delay: 200, // Delay before the animation starts
+  });
+}, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

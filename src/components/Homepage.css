@@ -17,7 +17,7 @@ body {
   position: relative;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
-  animation: fadeIn 2s ease-out; /* Fade-in animation for the hero section */
+  animation: fadeIn 1s ease-out; /* Fade-in animation for the hero section */
 }
 
 .hero-img {
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 200px;
-  animation: slideInFromBottom 1.5s ease-out; /* Slide in the content */
+  animation: slideInFromBottom 1s ease-out; /* Slide in the content */
 }
 .font-bold {
   font-weight: 900; /* You can adjust the number for even bolder text */
@@ -70,7 +70,7 @@ body {
   height: 60px;
   width: 180px;
   font-size: 1.3em;
-  animation: buttonHoverEffect 2s ease infinite alternate; /* Hover-like effect */
+  animation: buttonHoverEffect 1s ease infinite alternate; /* Hover-like effect */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ body {
   margin-top: -320px;
   z-index: 2;
   margin-bottom: 10px;
-  animation: fadeInUp 2s ease; /* Fade in with upward motion for cards */
+  animation: fadeInUp 1s ease; /* Fade in with upward motion for cards */
 }
 
 @keyframes fadeInUp {

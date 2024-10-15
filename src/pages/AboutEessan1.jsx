@@ -8,8 +8,8 @@ import OurTeam1 from './OurTeam1'
 const AboutEessan1 = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            once: true, // Whether the animation should happen only once or every time you scroll
+            duration: 800, // Animation duration in milliseconds
+            delay: 200, // Delay before the animation starts
         });
     }, []);
 

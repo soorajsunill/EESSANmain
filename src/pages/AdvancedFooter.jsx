@@ -51,7 +51,7 @@ const AdvancedFooter = () => {
     <footer className="ecf-footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div className="col-lg-4 col-md-6 mb-4 mb-md-0 footer_main">
             <div className="ecf-logo-container">
               <h2 className="ecf-logo">
                 <span className="ecf-logo-icon"><img className='logo_foot' src={logo_foot} alt="" /></span>EESSAN
@@ -61,7 +61,7 @@ const AdvancedFooter = () => {
               "Powering a greener future with nature's resources, EESSAN is dedicated to transforming waste into clean, renewable energy, fostering sustainability for future generations."
             </p>
             <p className="ecf-sub-description">
-              Eco-friendly energy, sustainable solution amongst nature(EESSAN)
+            Eco-friendly energy, sustainable solutions amongst nature (EESSAN)
             </p>
             <div className="ecf-social-icons">
               <a href="https://www.facebook.com/" className="ecf-social-icon fb_logo"><FaFacebookF /></a>
@@ -75,6 +75,7 @@ const AdvancedFooter = () => {
               <p><FaEnvelope /> <a href="mailto:eesan.naturalsolutions@gmail.com">eesan.naturalsolutions@gmail.com</a></p>
             </div>
           </div>
+
           <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5 className="ecf-section-title">Quick Links</h5>
             <ul className="ecf-list">
@@ -84,14 +85,15 @@ const AdvancedFooter = () => {
             </ul>
           </div>
           <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+
             <h5 className="ecf-section-title">Services</h5>
             <ul className="ecf-list">
-              <li><a href="#" className="ecf-link">Recycling</a></li>
-              <li><a href="#" className="ecf-link">Ecosystem</a></li>
-              <li><a href="#" className="ecf-link">Best Organic</a></li>
-              <li><a href="#" className="ecf-link">Biology System</a></li>
-              <li><a href="#" className="ecf-link">Private Policy</a></li>
-              <li><a href="#" className="ecf-link">Terms & Conditions</a></li>
+              <li><a href="#" className="ecf-link">Biogas production</a></li>
+              <li><a href="#" className="ecf-link">Biogas purification and bottling</a></li>
+              <li><a href="#" className="ecf-link">Sustainable construction</a></li>
+              <li><a href="#" className="ecf-link">Environmental Impact Assessment</a></li>
+              <li><a href="#" className="ecf-link">Incineration</a></li>
+              <li><a href="#" className="ecf-link">Service to local government</a></li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
