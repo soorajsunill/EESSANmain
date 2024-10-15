@@ -86,11 +86,37 @@ body {
 /* Cards Section */
 .cardss {
   position: relative;
-  /* margin-top: -320px; */
   z-index: 2;
   margin-bottom: 10px;
   animation: fadeInUp 1s ease;
+  padding-top: 230px; /* Default padding */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1329px) {
+  .cardss {
+    padding-top: 190px; /* Adjust padding-top for smaller widths */
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardss {
+    padding-top: 150px; /* Further reduce padding for tablet-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cardss {
+    padding-top: 100px; /* Reduce padding for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .cardss {
+    padding-top: 50px; /* Minimal padding for small mobile screens */
+  }
+}
+
 
 @keyframes fadeInUp {
   0% { transform: translateY(30px); opacity: 0; }
@@ -131,6 +157,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   animation: cardLoadEffect 1s ease-out;
+  width: 350px;
 }
 
 .card:hover {
@@ -143,18 +170,13 @@ body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Design Adjustments */
-@media (max-width: 1024px) {
-  .cardss {
-    margin-top: -250px;
-  }
 
   .btng {
     width: 160px;
     height: 55px;
     font-size: 1.2em;
   }
-}
+
 
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -165,9 +187,7 @@ body {
     font-size: 1rem;
   }
 
-  .cardss {
-    margin-top: -220px;
-  }
+
 
   .btng {
     width: 150px;
@@ -185,48 +205,9 @@ body {
     font-size: 0.9rem;
   }
 
-  .cardss {
-    margin-top: -180px;
-  }
-
   .btng {
     width: 140px;
     height: 45px;
     font-size: 1em;
-  }
-}
-
-@media (min-width: 1500px) {
-  .cardss {
-    margin-top: -250px;
-  }
-}
-@media (max-width: 1400px) {
-  .cardss {
-    margin-top: -250px;
-  }
-}
-@media (max-width: 1329px) {
-  .cardss {
-    margin-top: -190px;
-  }
-}
-
-/* Further adjustments for smaller screens */
-@media (max-width: 1024px) {
-  .cardss {
-    margin-top: -150px; /* Slightly increase margin */
-  }
-}
-
-@media (max-width: 768px) {
-  .cardss {
-    margin-top: -120px; /* Make it more proportional */
-  }
-}
-
-@media (max-width: 576px) {
-  .cardss {
-    margin-top: -100px; /* Further reduce margin */
   }
 }

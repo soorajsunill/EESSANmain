@@ -2,8 +2,8 @@ import './Homepage.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import { faEarthAmericas, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faFire } from '@fortawesome/free-solid-svg-icons';
+import { faHandHoldingDroplet, faUsers } from '@fortawesome/free-solid-svg-icons';
 import '../assets/font.css';
 import VisionAndMission from '../pages/VisionAndMission';
 import WhyEssan1 from '../pages/WhyEssan1';
@@ -25,16 +25,15 @@ const Homepage = () => {
               A journey with <span className="font-bold">EESSAN</span> for an economic prosperity in harmony with nature’s balance.<br />
             </p>
             <a href="tel:+919042032363"><button className='btng poppins-regular'>Start Today</button></a>
-          </div>
-        </div>
 
-        <div className="cardss">
+
+            <div className="cardss">
           <div className="container content-section">
             <div className="row">
               <div className="col-md-4">
                 <div className="card text-center p-4 icon-card">
                   <div className="icon-wrapper">
-                    <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faAddressBook} /></div>
+                    <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faFire} /></div>
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">Energy</h5>
@@ -46,7 +45,7 @@ const Homepage = () => {
               <div className="col-md-4">
                 <div className="card text-center p-4 icon-card">
                   <div className="icon-wrapper">
-                    <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faEarthAmericas} /></div>
+                    <div className="bg-icon"><FontAwesomeIcon className="hm-icons" icon={faHandHoldingDroplet} /></div>
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">Water</h5>
@@ -69,10 +68,12 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+          </div>
+        </div>
+
+        
       </div>
-      <br />
-      <br />
-      <br />
+
       <WhyEssan1 />
       <VisionAndMission />
       <Product />
