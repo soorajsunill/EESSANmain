@@ -1,0 +1,177 @@
+/* Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Homepage container */
+.homepage-container {
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  animation: fadeIn 2s ease-out; /* Fade-in animation for the hero section */
+}
+
+.hero-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Removed background image animation */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  animation: slideInFromBottom 1.5s ease-out; /* Slide in the content */
+}
+.font-bold {
+  font-weight: 900; /* You can adjust the number for even bolder text */
+}
+
+
+.green {
+  color: #6ea343;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.btng {
+  background-color: #6ea343;
+  color: #f8f9fa;
+  border: 2px solid #6ea343;
+  border-radius: 50px;
+  height: 60px;
+  width: 180px;
+  font-size: 1.3em;
+  animation: buttonHoverEffect 2s ease infinite alternate; /* Hover-like effect */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btng:hover {
+  background-color: #50772f;
+  border: 2px solid #47692b;
+}
+
+@keyframes buttonHoverEffect {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Cards Section */
+.cardss {
+  position: relative;
+  margin-top: -320px;
+  z-index: 2;
+  margin-bottom: 10px;
+  animation: fadeInUp 2s ease; /* Fade in with upward motion for cards */
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Icon Centering */
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.hm-icons {
+  height: 50px;
+  width: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.bg-icon {
+  height: 80px;
+  width: 80px;
+  padding: 15px;
+  background-color: #6ea343;
+  border-radius: 50%;
+  /* Removed rotation animation for the icons */
+}
+
+/* Card Styling */
+/* Card Styling */
+.card {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  background-color: white; /* Ensure full background color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-clip: border-box; /* Ensures background covers the whole card */
+  background-size: cover; /* Ensure background fills the card */
+  background-repeat: no-repeat;
+  animation: cardLoadEffect 1s ease-out;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes cardLoadEffect {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+
+  .cardss {
+      margin-top: -300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .hero-content p {
+      font-size: 0.9rem;
+  }
+
+  .cardss {
+      margin-top: -250px;
+  }
+}

@@ -1,0 +1,71 @@
+.why-essan-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 2rem; /* Gap between the cards */
+}
+
+.reason-card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px; /* Set max width for the card */
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center the text inside the card */
+}
+
+.reason-card:hover {
+    transform: translateY(-8px); /* Adds a hover lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Adds more shadow on hover */
+}
+
+.reason-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #294145; /* Dark color for the card headings */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reason-icon {
+    font-size: 30px;
+    margin-bottom: 0.75rem; /* Space between icon and heading */
+}
+
+.reason-card p {
+    font-size: 18px;
+    color: #606060; /* Gray text for description */
+}
+
+.reason-card p strong {
+    color: #6EA343; /* Highlighted green for important text */
+}
+
+.oswald-600 {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .reason-card {
+        max-width: 100%; /* For smaller screens, allow the cards to take full width */
+    }
+}

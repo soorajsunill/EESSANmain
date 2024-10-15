@@ -1,0 +1,157 @@
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  height: 70px;
+}
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  .navbaroff {
+      background-color: rgba(0, 0, 0, 0.13);
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+
+      padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  height: 70px;
+  
+    }
+    
+    .navbaroff.stickyoff {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: black;
+      z-index: 1000;
+    }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 30px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 7.5rem;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  opacity: 1;
+  position: absolute; /* Position the child absolutely */
+  right: 220px;
+
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  
+}
+
+.navbar-links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #27ae60;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-links a:hover {
+  color: #7f8c8d;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-logo {
+    flex-grow: 1;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #2c3e50;
+    align-items: center;
+    padding: 1rem 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    gap: 1.5rem;
+  }
+  .navbaroff {
+      background-color: #2c3e50;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    }
+  
+
+  .navbar-links.active {
+    max-height: 200px;
+    opacity: 1;
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 20px;
+  }
+}

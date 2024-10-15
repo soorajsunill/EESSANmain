@@ -1,0 +1,112 @@
+/* Wrapper for the entire component */
+.vision-mission-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #294145; /* Set dark background color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    padding: 40px 20px; /* Add some padding */
+    position: relative; /* Allow absolute positioning within */
+}
+
+/* Container for vision and mission sections */
+.vision-mission-container {
+    max-width: 1200px; /* Set max-width for better responsiveness */
+    width: 100%;
+    padding: 20px; /* Padding around content */
+    position: relative; /* Required for positioning child elements */
+}
+
+/* Image Container */
+.image-container {
+    position: relative; /* Change to relative for better flow */
+    z-index: 1; /* Ensure it stays above background */
+}
+
+/* Vision Image */
+.vision-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the space */
+    border: 10px solid white;
+    border-radius: 50px;
+    animation: zoomIn 0.5s ease-in-out; /* Add zoom animation */
+}
+
+/* Vision & Mission Title */
+.vision-mission-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px; /* Font size for the heading */
+    font-weight: bold;
+    color: #ffffff; /* White color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Reduced space below the image */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Nature Quote */
+.nature-quote {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Additional Text */
+.additional-text {
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    font-size: 18px; /* Font size for additional text */
+    color: #ffffff; /* White color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the additional text */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .vision-mission-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .nature-quote {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .additional-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+.highlight-green {
+    color: #6ea343; /* Green color for highlights */
+}
+
+.icon {
+    margin-right: 8px; /* Space between icon and text */
+    color: #ffffff; /* Change this color as needed */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

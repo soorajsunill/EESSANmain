@@ -1,0 +1,370 @@
+.cp-contact-page {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cp-map-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .map_123 {
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .map_123:hover {
+    transform: scale(1.05);
+  }
+  
+  .cp-content-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .cp-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .cp-subtitle {
+    font-size: 2.5rem;
+    color: #294145;
+    margin-bottom: 20px;
+  }
+  
+  .cp-highlight {
+    color: #6ea343;
+    font-weight: bold;
+  }
+  
+  .cp-description {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .cp-contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .cp-info-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #c7c7c727;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: 0px 1px 0px 0px;
+    max-width: 350px;
+  }
+  
+  .cp-info-item:hover {
+    background-color: #e0f7fa;
+  }
+  
+
+/* Main Container */
+.cp-contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cp-contact-form:hover {
+  transform: scale(1.01);
+}
+
+.cp-form-row {
+  margin-bottom: 20px;
+}
+
+.form-floating input,
+.form-floating textarea {
+  border-radius: 6px;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  background-color: #f1f1f1;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+  border-color: #4caf50;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.form-floating label {
+  padding: 10px;
+  font-size: 14px;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.form-floating input:focus + label,
+.form-floating textarea:focus + label {
+  color: #4caf50;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+}
+
+.cp-submit-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.cp-submit-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cp-submit-btn:focus {
+  outline: none;
+  background-color: #3e8e41;
+}
+
+.cp-submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cp-contact-form {
+    padding: 20px;
+  }
+
+  .cp-submit-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+
+
+
+ /* Contact Info Section */
+.cp-contact-info {
+  margin-top: 50px;
+  animation: fadeInUp 1s ease-in-out;
+  gap: 10px;
+}
+
+.cp-info-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin-bottom: 30px;
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.cp-info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cp-icon {
+  font-size: 2.5rem;
+  color: #28a745;
+  margin-right: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+  margin-right: 10px;
+}
+.cp-icon-hd {
+  font-size: 2rem;
+}
+
+.cp-info-content h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cp-info-content p {
+  margin: 0;
+  line-height: 1.5;
+  color: #6c757d;
+  font-size: .8em;
+}
+
+.cp-icons {
+  height: 30px;
+  width: 30px;
+  color: rgb(255, 255, 255);
+}
+.cp-bg-icon{
+  height: 70px;
+  width: 70px;
+  padding: 0px;
+  background-color:#6ea343;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cp-contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cp-info-item {
+    margin-bottom: 20px;
+  }
+
+  .cp-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+  .cp-info-content p {
+    font-size: 0.9rem;
+  }
+}
+.cp-icons{
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .cp-info-item {
+    padding: 15px;
+  }
+
+  .cp-info-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .cp-info-content p {
+    font-size: 0.8rem;
+  }
+
+  .cp-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+  .cp-icons{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 355px) {
+  .cp-info-item {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .cp-icon {
+    font-size: 1.5rem;
+  }
+}
+
+  
+  @media (max-width: 768px) {
+    
+  
+    .map_123 {
+      height: 300px;
+    }
+    
+    .name_input {
+      margin-bottom: 20px;
+    }
+    .phone_no_input {
+      margin-bottom: 20px;
+    }
+    .cp-info-item {
+      margin-bottom: 20px
+    }
+    
+  }
+
+  @media (max-width: 576px) {
+    .cp-info-item {
+      font-size: .9em;
+    }
+
+  }
+  @media (max-width: 355px) {
+    .cp-info-item {
+      font-size: .7em;
+    }
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* ToastStyles.css */
+
