@@ -5,6 +5,7 @@ import AdvancedFooter from './pages/AdvancedFooter'
 import ContactPage from './pages/ContactPage'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutEessan1 from './pages/AboutEessan1'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
