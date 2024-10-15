@@ -27,7 +27,7 @@ const Homepage = () => {
     ensuring a cleaner and healthier planet for generations to come.
 </p>
 
-            <button className='btng poppins-regular'>Start Today</button>
+            <a href="tel:+919042032363"><button className='btng poppins-regular'>Start Today</button></a>
           </div>
         </div>
 

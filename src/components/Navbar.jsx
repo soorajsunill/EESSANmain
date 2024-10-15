@@ -24,30 +24,37 @@ const Navbar = () => {
     };
   }, []);
 
-  return (
-    <nav className={`navbar ${isSticky ? 'sticky' : 'stickyoff navbaroff'}`} data-aos="fade-down">
-      <div className="navbar-container">
-        <div className="navbar-logo">
-          <img src='https://lh3.googleusercontent.com/pw/AP1GczMBzORkIm25f26Gid2rVxQQQhj4MqAWqoppXru3-kcJvVa3NHcMTsyawY3xdMa9cq8ow5yXttKl2NkQftXNplhQurciIXpA3Ta08zcJCLol9HBjQm8VbIVGe4fbiuODXsmRHv7n7HGJ9GzeQQ9fiXE6=w441-h127-s-no-gm?authuser=0' alt="World Environment Day Logo" />
-        </div>
+  // Function to handle link click
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu
+  };
 
-        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          <Link to="/">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/contact">CONTACT</Link>
+  return (
+    <>
+      <nav className={`navbar ${isSticky ? 'sticky' : 'stickyoff navbaroff'}`} data-aos="fade-down">
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            <img src='https://lh3.googleusercontent.com/pw/AP1GczMBzORkIm25f26Gid2rVxQQQhj4MqAWqoppXru3-kcJvVa3NHcMTsyawY3xdMa9cq8ow5yXttKl2NkQftXNplhQurciIXpA3Ta08zcJCLol9HBjQm8VbIVGe4fbiuODXsmRHv7n7HGJ9GzeQQ9fiXE6=w441-h127-s-no-gm?authuser=0' alt="World Environment Day Logo" />
+          </div>
+
+          <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+            <Link to="/" onClick={handleLinkClick}>HOME</Link>
+            <Link to="/about" onClick={handleLinkClick}>ABOUT</Link>
+            <Link to="/contact" onClick={handleLinkClick}>CONTACT</Link>
+          </div>
+          <div 
+            className="hamburger" 
+            onClick={() => setIsOpen(!isOpen)} 
+            aria-expanded={isOpen} 
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <div 
-          className="hamburger" 
-          onClick={() => setIsOpen(!isOpen)} 
-          aria-expanded={isOpen} 
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
