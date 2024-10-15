@@ -1,56 +1,67 @@
-/* Body Reset */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-}
-
-/* Homepage container */
 .homepage-container {
-  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
 }
 
-/* Hero Section */
 .hero-section {
-  height: 100vh;
+  height: 80vh; /* Set background height to 80% of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
-  animation: fadeIn 1s ease-out;
 }
 
 .hero-img {
   width: 100%;
-  height: 80%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-content {
+  z-index: 2;
   position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 200px;
-  animation: slideInFromBottom 1s ease-out;
 }
 
-.font-bold {
-  font-weight: 900;
+h1, h3, .lead {
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
 }
 
-.green {
-  color: #6ea343;
+h1 {
+  font-size: 4vw;
+  line-height: 1.2;
 }
 
-/* Animations */
+h3 {
+  font-size: 2.5vw;
+}
+
+.lead {
+  font-size: 1.5vw;
+}
+
+.btng {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes buttonHoverEffect {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -61,69 +72,6 @@ body {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-.btng {
-  background-color: #6ea343;
-  color: #f8f9fa;
-  border: 2px solid #6ea343;
-  border-radius: 50px;
-  height: 60px;
-  width: 180px;
-  font-size: 1.3em;
-  animation: buttonHoverEffect 1s ease infinite alternate;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.btng:hover {
-  background-color: #50772f;
-  border: 2px solid #47692b;
-}
-
-@keyframes buttonHoverEffect {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
-}
-
-/* Cards Section */
-.cardss {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 10px;
-  animation: fadeInUp 1s ease;
-  padding-top: 230px; /* Default padding */
-}
-
-/* Responsive adjustments */
-@media (max-width: 1329px) {
-  .cardss {
-    padding-top: 190px; /* Adjust padding-top for smaller widths */
-  }
-}
-
-@media (max-width: 1024px) {
-  .cardss {
-    padding-top: 150px; /* Further reduce padding for tablet-sized screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .cardss {
-    padding-top: 100px; /* Reduce padding for mobile screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .cardss {
-    padding-top: 50px; /* Minimal padding for small mobile screens */
-  }
-}
-
-
-@keyframes fadeInUp {
-  0% { transform: translateY(30px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
-/* Icon Centering */
 .icon-wrapper {
   display: flex;
   justify-content: center;
@@ -146,7 +94,23 @@ body {
   border-radius: 50%;
 }
 
-/* Card Styling */
+.btng {
+  background-color: #6ea343;
+  color: #f8f9fa;
+  border: 2px solid #6ea343;
+  border-radius: 50px;
+  height: 60px;
+  width: 180px;
+  font-size: 1.3em;
+  animation: buttonHoverEffect 1s ease infinite alternate;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btng:hover {
+  background-color: #50772f;
+  border: 2px solid #47692b;
+}
+
 .card {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border: none;
@@ -164,50 +128,136 @@ body {
   transform: translateY(-10px);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
 }
-
 @keyframes cardLoadEffect {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
+.cardss {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(50%);
+}
 
-  .btng {
-    width: 160px;
-    height: 55px;
-    font-size: 1.2em;
+.icon-card {
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.bg-icon {
+  font-size: 40px;
+  color: #6ea343;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 1329px) {
+  .cardss {
+    margin-top: -190px;
+    transform: none;
+    margin-top: 0; /* Reset margin-top */
+    transform: translateY(100%); /* Move the cards completely below the background image */
   }
 
-
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
+  .hero-content {
+    padding-bottom: 0px; /* Add padding to create space between the button and the cards */
   }
 
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-
-
-  .btng {
-    width: 150px;
-    height: 50px;
-    font-size: 1.1em;
+  .homepage-container {
+    margin-bottom: 180px;
   }
 }
 
-@media (max-width: 576px) {
-  .hero-content h1 {
-    font-size: 2rem;
+@media (max-width: 1200px) {
+  .hero-section {
+    height: 70vh;
   }
 
-  .hero-content p {
-    font-size: 0.9rem;
+  h1 {
+    font-size: 6vw;
+  }
+  
+  h3 {
+    font-size: 4vw;
+  }
+  
+  .lead {
+    font-size: 2.5vw;
+  }
+  
+
+  .cardss {
+    transform: translateY(60%);
+  }
+  .homepage-container {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 1040px) {
+
+  .homepage-container {
+    margin-bottom: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+  
+  h3 {
+    font-size: 6vw;
+  }
+  
+  .lead {
+    font-size: 4vw;
+  }
+  
+  
+  
+  .cardss {
+    transform: translateY(70%);
+  }
+  .homepage-container {
+    margin-bottom: 600px;
+  }
+  .cardss {
+    transform: translateY(80%); /* Move the cards further down to prevent overlap */
+  }
+  
+  .hero-content {
+    padding-bottom: 0px; /* Add padding to ensure enough space between the button and cards */
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage-container {
+    margin-bottom: 640px;
+  }
+  .btng{
+    font-size: 1.1em;
   }
 
-  .btng {
-    width: 140px;
-    height: 45px;
-    font-size: 1em;
-  }
+
 }
