@@ -86,7 +86,7 @@ body {
 /* Cards Section */
 .cardss {
   position: relative;
-  margin-top: -320px;
+  /* margin-top: -320px; */
   z-index: 2;
   margin-bottom: 10px;
   animation: fadeInUp 1s ease;
@@ -193,5 +193,40 @@ body {
     width: 140px;
     height: 45px;
     font-size: 1em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .cardss {
+    margin-top: -250px;
+  }
+}
+@media (max-width: 1400px) {
+  .cardss {
+    margin-top: -250px;
+  }
+}
+@media (max-width: 1329px) {
+  .cardss {
+    margin-top: -190px;
+  }
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .cardss {
+    margin-top: -150px; /* Slightly increase margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .cardss {
+    margin-top: -120px; /* Make it more proportional */
+  }
+}
+
+@media (max-width: 576px) {
+  .cardss {
+    margin-top: -100px; /* Further reduce margin */
   }
 }
