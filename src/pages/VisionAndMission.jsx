@@ -4,7 +4,7 @@ import { faHandshake } from '@fortawesome/free-regular-svg-icons';
 import './VisionAndMission.css';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
-import visionimg from '../assets/images/website.jpg'
+
 
 const VisionAndMission = () => {
     useEffect(() => {
@@ -14,6 +14,7 @@ const VisionAndMission = () => {
             delay: 200, // Delay before the animation starts
         });
     }, []); // Empty dependency array to run this effect only once when the component mounts
+    const visionimg="https://lh3.googleusercontent.com/pw/AP1GczOKPcoTcCCe7IlSFxmkP8iNfcesfIf7CtlRL5k8OzvxSlzlqNi0RAAEepHr9vGrvuN1ffqbbU8eP0u6qy0UfpdZfvz-WS4_Z1wCOjIhPTbFu5kwP7SzJ3C7IzR_o2CKr-Dor1V1tE0YDmgv__PRUmAR=w1080-h675-s-no-gm?authuser=0"
 
     return (
         <div className="vision-mission-wrapper" data-aos="fade-up">
