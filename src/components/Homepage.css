@@ -111,18 +111,6 @@ h3 {
   border: 2px solid #47692b;
 }
 
-.card {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-clip: border-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: cardLoadEffect 1s ease-out;
-  width: 350px;
-}
 
 .card:hover {
   transform: translateY(-10px);
@@ -173,7 +161,7 @@ h3 {
 /* Media Queries for Responsiveness */
 @media (min-width: 1329px) {
   .cardss {
-    margin-top: -190px;
+    /* margin-top: -150px; */
     transform: none;
     margin-top: 0; /* Reset margin-top */
     transform: translateY(100%); /* Move the cards completely below the background image */
@@ -184,7 +172,7 @@ h3 {
   }
 
   .homepage-container {
-    margin-bottom: 180px;
+    margin-bottom: 230px;
   }
 }
 
@@ -217,7 +205,7 @@ h3 {
 @media (max-width: 1040px) {
 
   .homepage-container {
-    margin-bottom: 170px;
+    margin-bottom: 220px;
   }
 }
 
@@ -233,14 +221,19 @@ h3 {
   .lead {
     font-size: 4vw;
   }
-  
+  .card{
+    margin-bottom: 15px;
+  }
+  .cardss{
+    gap: 10px;
+  }
   
   
   .cardss {
     transform: translateY(70%);
   }
   .homepage-container {
-    margin-bottom: 600px;
+    margin-bottom: 650px;
   }
   .cardss {
     transform: translateY(80%); /* Move the cards further down to prevent overlap */
@@ -253,11 +246,16 @@ h3 {
 
 @media (max-width: 400px) {
   .homepage-container {
-    margin-bottom: 640px;
+    margin-bottom: 680px;
   }
   .btng{
     font-size: 1.1em;
   }
-
+.card{
+  margin-bottom: 15px;
+}
+.cardss{
+  gap: 10px;
+}
 
 }
