@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './AdvancedFooter.css';
 import '../assets/font.css';
 import { Link } from 'react-router-dom';
+import logo_foot from '../assets/images/logo.png'
 
 const AdvancedFooter = () => {
   const [email, setEmail] = useState('');
@@ -53,7 +54,7 @@ const AdvancedFooter = () => {
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <div className="ecf-logo-container">
               <h2 className="ecf-logo">
-                <span className="ecf-logo-icon">🍃</span>EESSAN
+                <span className="ecf-logo-icon"><img className='logo_foot' src={logo_foot} alt="" /></span>EESSAN
               </h2>
             </div>
             <p className="ecf-description">
@@ -69,7 +70,7 @@ const AdvancedFooter = () => {
               <a href="https://www.google.com/" className="ecf-social-icon goo_logo"><FaGoogle /></a>
             </div>
             <div className="ecf-contact-info">
-              <p><FaMapMarkerAlt /> India Institute of Technology Madras <br /> IIT P.O., Chennai 600 036 <br /> INDIA</p>
+              <p><FaMapMarkerAlt /><a href="https://maps.app.goo.gl/mPainz4r7RKsWSRy9"> Indian Institute of Technology Madras <br /> IIT P.O., Chennai 600 036 <br /> INDIA</a></p>
               <p><FaPhone /> <a href="tel:+919042032363">+91 90420 32363</a></p>
               <p><FaEnvelope /> <a href="mailto:eesan.naturalsolutions@gmail.com">eesan.naturalsolutions@gmail.com</a></p>
             </div>

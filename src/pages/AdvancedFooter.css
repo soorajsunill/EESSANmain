@@ -19,7 +19,11 @@
 
 .ecf-logo-icon {
   font-size: 2.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
+  margin-bottom: 10px;
+}
+.logo_foot{
+  height: 40px;
 }
 
 .ecf-description {
