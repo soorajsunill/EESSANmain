@@ -69,7 +69,7 @@ const Product = () => {
                             <tbody className='poppins-regular'>
                                 <tr>
                                     <td>BPR-1</td>
-                                    <td>1- 10</td>
+                                    <td>1- 20</td>
                                     <td>90 %</td>
                                 </tr>
                                 <tr>
